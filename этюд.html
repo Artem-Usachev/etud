@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Матсерская Этюд</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./style/этюд.css">
+
 </head>
 
 <body>
@@ -38,7 +40,7 @@
                             <a href="#company" class="menu__link">О Нас</a>
                         </li>
                         <li>
-                            <a href="#123" class="menu__link">Услуги</a>
+                            <a href="#services" class="menu__link">Услуги</a>
                         </li>
                         <li>
                             <a href="#" class="menu__link">Работы</a>
@@ -70,11 +72,10 @@
 
         <div class="content">
             <section class="company" id="company">
-                <div class="company__line"></div>
+
                 <div class="company__box">
                     <h2 class="company__main-title">О Мастерской</h2>
                 </div>
-                <div class="company__line"></div>
                 <div class="company__text-box">
                     <div class="company__about">
                         <h3 class="company__title">Забота о вашем инструменте</h3>
@@ -84,53 +85,68 @@
                     <div class="company__master">
                         <h3 class="company__title"> Мастер - Павел Кручинский</h3>
                         <p class="company__subtitle">Удостоверение настройщика пианино <br>и роялей <br>Член Ассоциации фортепианных<br> мастеров России<br> Опыт работы 5 лет</p>
+
                     </div>
                 </div>
             </section>
 
 
-
-
-
-
-
-
-
-
-
-            <!-- <section class="services" id="123">
-                <h2 class="services__title"> Услуги</h2>
-                <div class="services__buttons">
-                    <button class="button">
-                       <div class="button__background">
-                           <div class="buttom__overlay"></div>
+            <section class="services" id="services">
+                <h2 class="services__title">Услуги</h2>
+                <div class="services__cards">
+                    <div class="card card-settings">
+                        <div class="card__overlay"></div>
+                        <p class="card__text">Настройка <br>(классическая темперация)</p>
                     </div>
-                    <h2 class="button__title">Настройка </h2>
-                    <p class="button__subtitle">(классическая темперация)</p>
-                </button>
-                    <button class="button">
-                    <div class="button__background">
-                        <div class="buttom__overlay"></div>
+                    <div class="card card-repair">
+                        <div class="card__overlay"></div>
+                        <p class="card__text">Ремонт<br> Реставрация</p>
                     </div>
-                    <h2 class="button__title">Ремонт  <br>Реставрация </h2>
-                 </button>
-                    <button class="button">
-                    <div class="button__background">
-                        <div class="buttom__overlay"></div>
+                    <div class="card card-transportation">
+                        <div class="card__overlay"></div>
+                        <p class="card__text">Перевозка Инструмента</p>
                     </div>
-                    <h2 class="button__title">Перевозка <br> Инструмента </h2>     
-                </button>
-                    <button class="button">
-                    <div class="button__background">
-                        <div class="buttom__overlay"></div>
+                    <div class="card card-diagnostics">
+                        <div class="card__overlay"></div>
+                        <p class="card__text ">Диагностика</p>
                     </div>
-                     <h2 class="button__title">Диагностика </h2>
- 
-                </button>
                 </div>
-            </section> -->
+            </section>
+            <section class="work">
+                <h2 class="work__title">Работы</h2>
+                <div class="work__card">
+                    <img class="work__illustrasion" alt="" src="./images/buttom-paino.jpg">
+                    <div class="work__text">
+                        <h3 class="work__text-title">Замена накладок на клавишах</h3>
+
+                        <p class="work__subtitle">Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки </p>
+
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
 
 
+            </section>
+            <footer class="footer">
+                <h2 class="footer__title">Свяжитесь с Нами</h2>
+                <p class="footer__subtitle">Вы можете задать вопросы и заказать улсуги <br> по телефону, почте или в наших соцсетях</p>
+                <p class="footer__number">+79546543434</p>
+                <a class="footer__mail" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">masterskayia-etud@yandex.ru</a>
+
+                <ul class="footer__links">
+                    <li class="footer__link-place">
+                        <a class="footer__link" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">
+                            <img class="footer__link-image" src="./images/vk.svg" alt="ВК">
+                        </a>
+                    </li>
+                    <li class="footer__link-place">
+                        <a class="footer__link" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">
+                            <img class="footer__link-image" src="./images/insta.svg" alt="Инстаграм">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
         </div>
     </div>
     <script src="./scripts/script.js"></script>
