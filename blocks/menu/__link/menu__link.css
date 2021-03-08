@@ -1,0 +1,18 @@
+.menu__link {
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.menu__link:hover {
+    background-size: 100% 2px;
+}
+
+.menu__link:active {
+    background-size: 100% 2px;
+}

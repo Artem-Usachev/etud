@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    max-width: 447.5px;
+    max-height: 447px;
+    min-height: 235px;
+    min-width: 235px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card:hover .card__overlay {
+    background-color: rgba(22, 21, 21, 0.9);
+}

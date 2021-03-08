@@ -1,0 +1,37 @@
+.menu__sidebar {
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgb(20, 19, 19);
+    list-style-type: none;
+    transition: 1s ease all;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.menu__sidebar_visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu__sidebar_hidden {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu__sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu__sidebar {
+        width: 100%;
+    }
+}

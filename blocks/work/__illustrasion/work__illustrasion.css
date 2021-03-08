@@ -1,0 +1,9 @@
+.work__illustrasion {
+    display: block;
+    max-width: 741px;
+    max-height: 741px;
+    min-width: 220px;
+    min-height: 220px;
+    width: 100%;
+    grid-area: illustration;
+}

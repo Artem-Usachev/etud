@@ -1,0 +1,37 @@
+.header__nav {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease all;
+}
+
+.header__nav:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1439px) {
+    .header__nav {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .header__nav {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header__nav {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__nav {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,35 @@
+.header__logo {
+    max-width: 585px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+    .header__logo {
+        max-width: 457px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .header__logo {
+        max-width: 345px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header__logo {
+        max-width: 543px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__logo {
+        max-width: 338px;
+        ;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .header__logo {
+        max-width: 250px;
+    }
+}
