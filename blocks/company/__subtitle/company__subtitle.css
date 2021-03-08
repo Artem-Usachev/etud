@@ -6,36 +6,29 @@
 
 @media screen and (max-width: 1439px) {
     .company__subtitle {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 
 @media screen and (max-width: 1279px) {
     .company__subtitle {
-        font-size: 12px;
-        line-height: 15px;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .company__subtitle {
-        font-size: 9px;
-        line-height: 11px;
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .company__subtitle {
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 16px;
+        line-height: 19px;
         text-align: center;
     }
 }
 
 @media screen and (max-width: 424px) {
     .company__subtitle {
-        font-size: 7px;
-        line-height: 9px;
+        font-size: 12px;
+        line-height: 14px;
     }
 }
