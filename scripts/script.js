@@ -1,23 +1,31 @@
+// preload
 window.onload = function() {
-        document.body.classList.add('loaded_hiding');
-        window.setTimeout(function() {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-        }, 500);
-    }
-    // open/close menu
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function() {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+}
+
+// openMenu
 let menu = document.querySelector('.menu');
 let menu__sidebar = document.querySelector('.menu__sidebar');
 let exit = document.querySelector('.menu__exit');
+let menu__body = document.querySelector('.menu__body');
 
 function openMenu() {
     menu__sidebar.classList.remove('menu__sidebar_hidden');
     menu__sidebar.classList.add('menu__sidebar_visible');
 
 }
-
+// closeMenu
 function closeMenu() {
     menu__sidebar.classList.add('menu__sidebar_hidden');
+}
+
+let menu__link = document.querySelectorAll(".menu__link");
+for (let i = 0; i < menu__link.length; i++) {
+    menu__link[i].onclick = closeMenu;
 }
 
 exit.addEventListener('click', closeMenu);
@@ -55,6 +63,7 @@ let closeBtnDiagnostics = document.querySelector('.popup__exit-img-diagnostics')
 let closeBtnTransportation = document.querySelector('.popup__exit-img-transportation');
 let closeBtnRepair = document.querySelector('.popup__exit-img-repair');
 let closeBtnSettings = document.querySelector('.popup__exit-img-settings');
+
 // Settings
 function openPopupSettings() {
     popup_settings.classList.remove('invisible');
