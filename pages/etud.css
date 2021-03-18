@@ -12,6 +12,10 @@
 @import url(../animation/arrow-left.css);
 @import url(../animation/arrow-right.css);
 
+/* preloader */
+
+@import url(../blocks/preloader/preloader.css);
+
 /* arrow-down */
 
 @import url(../blocks/arrow-down/arrow-down.css);
