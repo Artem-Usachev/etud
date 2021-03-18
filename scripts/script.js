@@ -1,4 +1,11 @@
-// open/close menu
+window.onload = function() {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function() {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+    // open/close menu
 let menu = document.querySelector('.menu');
 let menu__sidebar = document.querySelector('.menu__sidebar');
 let exit = document.querySelector('.menu__exit');
