@@ -3,11 +3,6 @@
     grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     column-gap: 15.5px;
     padding: 0 72px 0;
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 @media screen and (max-width: 1439px) {

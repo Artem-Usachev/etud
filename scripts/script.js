@@ -88,3 +88,35 @@ btnTransportation.addEventListener('click', openPopupTransportation);
 closeBtnTransportation.addEventListener('click', closePopupTransportation);
 btnDiagnostics.addEventListener('click', openPopupDiagnostics);
 closeBtnDiagnostics.addEventListener('click', closePopupDiagnostics);
+
+
+// work-slider
+let work_cards = document.querySelector('.work__cards');
+let arrow_left = document.querySelector('.arrow_posishion_left');
+let arrow_right = document.querySelector('.arrow_posishion_right');
+let work_card = document.querySelector('.work__card');
+let i = 0;
+
+function sliderLeft() {
+    if (i < 0) {
+        i += 100;
+        work_cards.style.transform = `translateX(${i}%)`;
+        work_cards.style.transition = '1s';
+    }
+    if (i === 0) {
+        i = -500;
+    }
+}
+
+function sliderRight() {
+    if (i > -400) {
+        i -= 100;
+        work_cards.style.transform = `translateX(${i}%)`;
+    }
+    if (i === -400) {
+        i = 100;
+    }
+}
+
+arrow_left.addEventListener('click', sliderLeft);
+arrow_right.addEventListener('click', sliderRight);

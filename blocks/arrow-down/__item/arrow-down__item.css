@@ -5,8 +5,9 @@
     border-bottom: 2px solid #fdfdfd;
     border-right: 2px solid #ffffff;
     transform: rotate(45deg);
-    animation: arrow-down 3s infinite;
+    animation: arrow-down 4s infinite;
     z-index: 5;
+    margin: -8px;
     position: relative;
     outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -34,6 +35,6 @@
     .arrow-down .arrow-down__item {
         width: 15px;
         height: 15px;
-        margin: 0;
+        margin: -5px;
     }
 }
