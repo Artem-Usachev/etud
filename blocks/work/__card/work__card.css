@@ -27,8 +27,6 @@
     .work__card {
         grid-template-columns: 347px 227px;
         grid-template-areas: "title title" "illustration text";
-        /* margin-left: 30px;
-        margin-right: 30px; */
     }
 }
 
@@ -36,6 +34,7 @@
     .work__card {
         grid-template-columns: 300px 200px;
         grid-template-areas: "title title" "illustration text";
+        column-gap: 20px
     }
 }
 
