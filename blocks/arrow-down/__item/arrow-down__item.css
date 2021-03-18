@@ -8,6 +8,8 @@
     animation: arrow-down 3s infinite;
     z-index: 5;
     position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .arrow-down .arrow-down__item:nth-child(2) {
