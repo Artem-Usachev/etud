@@ -1,22 +1,90 @@
-const menu__sidebar = document.querySelector('.menu__sidebar');
-menu__sidebar.classList.add('menu__sidebar_hidden');
+// open/close menu
+let menu = document.querySelector('.menu');
+let menu__sidebar = document.querySelector('.menu__sidebar');
+let exit = document.querySelector('.menu__exit');
 
-function addVisible() {
+function openMenu() {
     menu__sidebar.classList.remove('menu__sidebar_hidden');
     menu__sidebar.classList.add('menu__sidebar_visible');
 
 }
 
-const menu = document.querySelector('.menu');
-menu.addEventListener('click', addVisible);
-
-
-
-const exit = document.querySelector('.menu__exit');
-
-function CloseMenu() {
+function closeMenu() {
     menu__sidebar.classList.add('menu__sidebar_hidden');
 }
 
+exit.addEventListener('click', closeMenu);
+menu.addEventListener('click', openMenu);
 
-exit.addEventListener('click', CloseMenu);
+// scroll page
+let btnScrollDown = document.querySelector('.arrow-down');
+let windowCoords = document.documentElement.clientHeight;
+
+function scrollDown() {
+
+    (function scroll() {
+        if (window.pageYOffset < windowCoords) {
+            window.scrollBy(0, 5);
+            setTimeout(scroll, 0);
+        }
+        if (window.pageYOffset > windowCoords) {
+            window.scrollTo(0, windowCoords);
+        }
+    })();
+}
+
+btnScrollDown.addEventListener('click', scrollDown);
+// popup
+let btnSettings = document.querySelector('.card-settings');
+let btnRepair = document.querySelector('.card-repair');
+let btnTransportation = document.querySelector('.card-transportation');
+let btnDiagnostics = document.querySelector('.card-diagnostics');
+let popup = document.querySelector('.popup');
+let popup_settings = document.querySelector('.popup-settings');
+let popup_repair = document.querySelector('.popup-repair');
+let popup_transportation = document.querySelector('.popup-transportation');
+let popup_diagnostics = document.querySelector('.popup-diagnostics');
+let closeBtnDiagnostics = document.querySelector('.popup__exit-img-diagnostics');
+let closeBtnTransportation = document.querySelector('.popup__exit-img-transportation');
+let closeBtnRepair = document.querySelector('.popup__exit-img-repair');
+let closeBtnSettings = document.querySelector('.popup__exit-img-settings');
+// Settings
+function openPopupSettings() {
+    popup_settings.classList.remove('invisible');
+}
+
+function closePopupSettings() {
+    popup_settings.classList.add('invisible');
+}
+// Repair
+function openPopupRepair() {
+    popup_repair.classList.remove('invisible');
+}
+
+function closePopupRepair() {
+    popup_repair.classList.add('invisible');
+}
+// Transportation
+function openPopupTransportation() {
+    popup_transportation.classList.remove('invisible');
+}
+
+function closePopupTransportation() {
+    popup_transportation.classList.add('invisible');
+}
+// Diagnostics
+function openPopupDiagnostics() {
+    popup_diagnostics.classList.remove('invisible');
+}
+
+function closePopupDiagnostics() {
+    popup_diagnostics.classList.add('invisible');
+}
+btnSettings.addEventListener('click', openPopupSettings);
+closeBtnSettings.addEventListener('click', closePopupSettings);
+btnRepair.addEventListener('click', openPopupRepair);
+closeBtnRepair.addEventListener('click', closePopupRepair);
+btnTransportation.addEventListener('click', openPopupTransportation);
+closeBtnTransportation.addEventListener('click', closePopupTransportation);
+btnDiagnostics.addEventListener('click', openPopupDiagnostics);
+closeBtnDiagnostics.addEventListener('click', closePopupDiagnostics);

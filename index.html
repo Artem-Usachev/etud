@@ -16,7 +16,6 @@
                 <video class="video__media" src="./video/header__video.mp4" autoplay muted loop></video>
             </div>
             <div class="header__content">
-
                 <!-- строчка с меню -->
                 <div class="header__bar">
                     <img class="header__logo" src="./images/logo.svg" alt="лого">
@@ -25,8 +24,7 @@
                     </nav>
                 </div>
                 <!-- всплывающее меню -->
-
-                <nav class="menu__sidebar ">
+                <nav class="menu__sidebar menu__sidebar_hidden">
                     <img class="menu__exit" alt="закрыть" src="./images/exit.svg">
                     <ul class="menu__body">
                         <li>
@@ -46,15 +44,11 @@
                         </li>
                     </ul>
                 </nav>
-
-
                 <!-- заголовки -->
                 <div class="header__text">
                     <h1 class="header__title">Фортепианная Мастерская</h1>
                     <p class="header__subtitle">Реставрация Настройка Ремонт</p>
                 </div>
-
-
                 <!-- стрелка вниз -->
                 <div class="arrow-down">
                     <span class="arrow-down__item"></span>
@@ -63,18 +57,10 @@
                 </div>
             </div>
         </header>
-
-
-
-
-
-
-
-
+        <!-- content -->
         <div class="content">
             <!-- о нас -->
             <section class="company" id="company">
-
                 <div class="company__box">
                     <h2 class="company__main-title">О Мастерской</h2>
                 </div>
@@ -87,86 +73,127 @@
                 <div class="company__master">
                     <h3 class="company__title"> Мастер - Павел Кручинский</h3>
                     <p class="company__subtitle">Удостоверение настройщика пианино и роялей <br>Член Ассоциации фортепианных мастеров России<br> Опыт работы 5 лет</p>
-
                 </div>
+            </section>
+            <!-- услуги -->
+            <section class="services" id="services">
+                <div class="popup invisible popup-settings">
+                    <div class="popup__border">
+                        <button class="popup__exit" type="button">
+                            <img class="popup__exit-img popup__exit-img-settings" src="./images/Close-Icon.svg" alt="закрыть">
+                        </button>
+                        <div class="popup__content">
+                            <h2 class="popup__title">Настройка <br>(классическая темперация)</h2>
+                            <p class="popup__subtitle">Описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги
+                                описание услуги описание услуги описание услуги описание услуги описание услуги</p>
+                            <button class="popup__button" type="submit">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup invisible popup-repair">
+                    <div class="popup__border">
+                        <button class="popup__exit" type="button">
+                            <img class="popup__exit-img popup__exit-img-repair" src="./images/Close-Icon.svg" alt="закрыть">
+                        </button>
+                        <div class="popup__content">
+                            <h2 class="popup__title">Ремонт и Реставрация</h2>
+                            <p class="popup__subtitle">Описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги
+                                описание услуги описание услуги описание услуги описание услуги описание услуги</p>
+                            <button class="popup__button" type="submit">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup invisible popup-transportation">
+                    <div class="popup__border">
+                        <button class="popup__exit" type="button">
+                            <img class="popup__exit-img popup__exit-img-transportation" src="./images/Close-Icon.svg" alt="закрыть">
+                        </button>
+                        <div class="popup__content">
+                            <h2 class="popup__title">Перевозка Инструмента</h2>
+                            <p class="popup__subtitle">Описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги
+                                описание услуги описание услуги описание услуги описание услуги описание услуги</p>
+                            <button class="popup__button" type="submit">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup invisible popup-diagnostics">
+                    <div class="popup__border">
+                        <button class="popup__exit" type="button">
+                            <img class="popup__exit-img popup__exit-img-diagnostics" src="./images/Close-Icon.svg" alt="закрыть">
+                        </button>
+                        <div class="popup__content">
+                            <h2 class="popup__title">Диагностика</h2>
+                            <p class="popup__subtitle">Описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги описание услуги
+                                описание услуги описание услуги описание услуги описание услуги описание услуги</p>
+                            <button class="popup__button" type="submit">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="services__title">Услуги</h2>
+                <div class="services__cards">
+                    <div class="card card-settings">
+                        <div class="card__overlay"></div>
+                        <p class="card__text">Настройка <br>(классическая темперация)</p>
+                    </div>
+                    <div class="card card-repair">
+                        <div class="card__overlay"></div>
+                        <p class="card__text">Ремонт<br> Реставрация</p>
+                    </div>
+                    <div class="card card-transportation">
+                        <div class="card__overlay"></div>
+                        <p class="card__text">Перевозка<br> Инструмента</p>
+                    </div>
+                    <div class="card card-diagnostics">
+                        <div class="card__overlay"></div>
+                        <p class="card__text ">Диагностика</p>
+                    </div>
+                </div>
+            </section>
+            <!-- работы -->
+            <section class="work">
+                <h2 class="work__title">Работы</h2>
+                <div class="arrow  arrow_posishion_right"></div>
+                <div class="arrow  arrow_posishion_left"></div>
+                <div class="work__card">
+                    <img class="work__illustrasion" alt="" src="./images/buttom-paino.jpg">
+                    <div class="work__text">
+                        <h3 class="work__text-title">Замена накладок на клавишах</h3>
+                        <p class="work__subtitle">Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки </p>
+                    </div>
+                </div>
+            </section>
+            <!-- подвал -->
+            <footer class="footer">
+                <div class="footer__text-box">
+                    <h2 class="footer__title">Свяжитесь с Нами</h2>
+                    <p class="footer__subtitle">Вы можете задать вопросы и заказать улсуги <br> по телефону, почте или в наших соцсетях</p>
+                    <p class="footer__author">&#169 Этюд Павел Кручинский</p>
+                </div>
+                <ul class="footer__links">
+                    <li class="footer__link-place">
+                        <p class="footer__number">+79546543434</p>
+                    </li>
+                    <li class="footer__link-place">
+                        <a class="footer__mail" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">masterskayia-etud@yandex.ru</a>
+                    </li>
+
+                    <li class="footer__link-place">
+                        <ul class="footer__soshial">
+                            <li class="footer__link-place">
+                                <a class="footer__link" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">
+                                    <img class="footer__link-image" src="./images/vk.svg" alt="ВК">
+                                </a>
+                            </li>
+                            <li class="footer__link-place">
+                                <a class="footer__link" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">
+                                    <img class="footer__link-image" src="./images/insta.svg" alt="Инстаграм">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
         </div>
-        </section>
-
-        <!-- услуги -->
-        <section class="services" id="services">
-            <h2 class="services__title">Услуги</h2>
-            <div class="services__cards">
-                <div class="card card-settings">
-                    <div class="card__overlay"></div>
-                    <p class="card__text">Настройка <br>(классическая темперация)</p>
-                </div>
-                <div class="card card-repair">
-                    <div class="card__overlay"></div>
-                    <p class="card__text">Ремонт<br> Реставрация</p>
-                </div>
-                <div class="card card-transportation">
-                    <div class="card__overlay"></div>
-                    <p class="card__text">Перевозка<br> Инструмента</p>
-                </div>
-                <div class="card card-diagnostics">
-                    <div class="card__overlay"></div>
-                    <p class="card__text ">Диагностика</p>
-                </div>
-            </div>
-        </section>
-        <!-- работы -->
-        <section class="work">
-            <h2 class="work__title">Работы</h2>
-            <div class="arrow  arrow_posishion_right">
-
-            </div>
-            <div class="arrow  arrow_posishion_left">
-
-            </div>
-
-            <div class="work__card">
-                <img class="work__illustrasion" alt="" src="./images/buttom-paino.jpg">
-                <div class="work__text">
-                    <h3 class="work__text-title">Замена накладок на клавишах</h3>
-
-                    <p class="work__subtitle">Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки Зачем нужно менять накладки </p>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- подвал -->
-        <footer class="footer">
-            <div class="footer__text-box">
-                <h2 class="footer__title">Свяжитесь с Нами</h2>
-                <p class="footer__subtitle">Вы можете задать вопросы и заказать улсуги <br> по телефону, почте или в наших соцсетях</p>
-                <p class="footer__author">&#169 Этюд Павел Кручинский</p>
-            </div>
-            <ul class="footer__links">
-                <li class="footer__link-place">
-                    <p class="footer__number">+79546543434</p>
-                </li>
-                <li class="footer__link-place">
-                    <a class="footer__mail" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">masterskayia-etud@yandex.ru</a>
-                </li>
-
-                <li class="footer__link-place">
-                    <ul class="footer__soshial">
-                        <li class="footer__link-place">
-                            <a class="footer__link" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">
-                                <img class="footer__link-image" src="./images/vk.svg" alt="ВК">
-                            </a>
-                        </li>
-                        <li class="footer__link-place">
-                            <a class="footer__link" href="https://vk.com/pavelpianotuning" target="_blank" rel="noopener">
-                                <img class="footer__link-image" src="./images/insta.svg" alt="Инстаграм">
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </footer>
-    </div>
     </div>
     <script src="./scripts/script.js"></script>
 </body>
