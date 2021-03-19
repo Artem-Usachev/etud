@@ -13,8 +13,6 @@
         cursor: pointer;
         outline: none;
         transition: 0.3s ease all;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        -webkit-tap-highlight-color: transparent;
     }
     
     .popup__button:hover {

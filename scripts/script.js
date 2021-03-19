@@ -136,3 +136,29 @@ function sliderRight() {
 
 arrow_left.addEventListener('click', sliderLeft);
 arrow_right.addEventListener('click', sliderRight);
+
+
+// popup-application
+let openButton = document.querySelector('.menu__link-application');
+let popup_application = document.querySelector('.popup-application');
+let closeButton = popup_application.querySelector('.popup__exit-img');
+let inputUserName = popup_application.querySelector('input[name="name"]');
+let inputService = popup_application.querySelector('input[name="service"]');
+let inputTelephone = popup_application.querySelector('input[name="telephone"]');
+
+function openPopup() {
+    popup_application.classList.remove('invisible');
+}
+
+function closePopup() {
+    popup_application.classList.add('invisible');
+}
+
+function clickHeandlerInfo(e) {
+    e.preventDefault();
+    closePopup();
+}
+
+openButton.addEventListener('click', openPopup);
+closeButton.addEventListener('click', closePopup);
+popup_application.addEventListener('submit', (e) => clickHeandlerInfo(e));
